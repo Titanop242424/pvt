@@ -27,8 +27,8 @@ with open("info.json", "r") as info_file:
     info = json.load(info_file)
 
 # Get bot token and admin IDs from info.json
-BOT_TOKEN = info["8022705558:AAEbTCdygDZiqp1Ixal5DGfPulTI9vbvxpU"]
-admin_id = set(info["7163028849"])  # Convert list to set for fast lookup
+BOT_TOKEN = info["bot_token"]
+admin_id = set(info["admin_ids"])  # Convert list to set for fast lookup
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
